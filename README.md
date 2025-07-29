@@ -59,4 +59,10 @@ Run the agent with:
 OPENAI_API_KEY=... python agent_runner.py
 ```
 
+To use a local OpenAI-compatible endpoint such as Ollama, specify the API base URL:
+
+```bash
+OPENAI_API_KEY=dummy OPENAI_BASE_URL=http://localhost:11434/v1 python agent_runner.py
+```
+
 This workflow serves exact documentation for each function using only the names listed in `ov_function_counts.csv`.
