@@ -9,6 +9,7 @@ with open(DATA_FILE, encoding="utf-8") as f:
 
 app = FastAPI(title="OmicVerse Function Docs", version="0.1.0")
 
+
 @app.get("/doc")
 async def get_doc(function: str):
     """Return the stored docstring for a function name."""
